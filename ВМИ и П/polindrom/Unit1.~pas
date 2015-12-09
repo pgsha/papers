@@ -1,0 +1,45 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var i:integer;
+    a:string;
+begin
+  Edit2.Clear;
+  for i:=1 to Length(Edit1.Text) do
+    if Edit1.Text[i]<>' '
+      then a:=a+Edit1.Text[i];
+  Edit1.Text:=a;
+  for i:=0 to Length(a) do
+    Edit2.Text:=Edit2.Text+a[(Length(a)-i)];
+  if Edit1.Text=Edit2.Text then Label2.Caption:='Полиндром! :D'
+  else Label2.Caption:='Не полиндром :(';
+end;
+
+end.

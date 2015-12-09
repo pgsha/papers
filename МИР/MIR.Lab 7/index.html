@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Задание 7.1</title>
+</head>
+<body>
+<hr>
+<center>Пожалуйста, заполните анкету:</center>
+<hr>
+<form name=data action="mailto:xxx_mail@mail.ru" method=post>
+Ваше имя: <input name="name"> 
+Ваш e-mail: <input name="email">
+<br />
+Ваш возраст(лет): 
+<input name="age" type=radio value="Младше 15">Младше 15
+<input name="age" type=radio value="15-25" checked>15-25
+<input name="age" type=radio value="26-36">26-36
+<input name="age" type=radio value="36-60">36-60
+<input name="age" type=radio value="Старше 60">Старше 60
+<br />
+Место проживания:
+<select name="city">
+<option selected>Москва</option>
+<option>Пермь</option>
+<option>Екатеринбург</option>
+<option>Тюмень</option>
+<option>Казань</option>
+<option>Другое</option>
+</select>
+<hr>
+Вам понравился мой сайт?
+<input type=checkbox name="like" value="">
+<br /><br />
+Ваши пожелания:<br />
+<textarea name="text1" rows=5 cols=50>Стандартное значение поля</textarea>
+<br />
+<input type=submit value="Послать" />
+<input type=reset value="Очистить" />
+</form>
+
+</body>
+</html>

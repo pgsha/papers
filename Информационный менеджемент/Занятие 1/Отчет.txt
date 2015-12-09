@@ -1,0 +1,12 @@
+
+Model Name: Деятельность компании
+Definition: Это учебная модель, описывающая деятельность компании
+Scope: Общее управление бизнесом компании: исследование рынка, закупка компонетов, сборка, тестирование и продажа продуктов
+Viewpoint: Директор
+Time Frame: (AS-IS)
+Status: WORKING
+Purpose: Моделировать текущие бизнес-процессы компании (AS-IS)
+Author Name: Бабин 
+Creation Date: 11.02.2014
+System Last Revision Date: 11.02.2014
+User Last Revision Date: 11.02.2014

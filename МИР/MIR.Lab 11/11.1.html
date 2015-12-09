@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>11.1</title>
+</head>
+<body >
+<script type="text/javascript">
+function askUser(){
+var answer=' ';
+var stat='¬ведите врем€ года';
+var answer=prompt('¬рем€ года',stat);
+month =  new Array("декабрь","€нварь","февраль","март","апрель","май","июнь","июль","август","сент€брь","окт€брь","но€брь");
+
+switch (answer) {
+case '«има': a=0; b=3; break;
+case '¬есна': a=3; b=6; break;
+case 'Ћето': a=6; b=9; break;
+case 'ќсень': a=9; b=13	; break;
+default: document.bgColor="white"; break;
+}
+
+B=month.slice(a,b);
+for (i=0;i<3;i=i+1){
+document.write(B[i], '<br>');
+}
+
+}
+
+</script>
+<form>
+<input type="button" value=" нопка" onClick="askUser()">
+</form>
+</body>
+</html>

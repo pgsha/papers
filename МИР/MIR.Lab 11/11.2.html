@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>11.2</title>
+</head>
+<body >
+<script type="text/javascript">
+function askUser(answer){
+month =  new Array("декабрь","январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь");
+
+switch (answer) {
+case 'Зима': a=0; b=3; break;
+case 'Весна': a=3; b=6; break;
+case 'Лето': a=6; b=9; break;
+case 'Осень': a=9; b=13	; break;
+default: document.bgColor="white"; break;
+}
+
+B=month.slice(a,b);
+for (i=0;i<3;i=i+1){
+document.write(B[i], '<br>');
+}
+
+}
+
+</script>
+<form>
+<input type="button" value="Зима" onClick="askUser('Зима')">
+<input type="button" value="Весна" onClick="askUser('Весна')">
+<input type="button" value="Лето" onClick="askUser('Лето')">
+<input type="button" value="Осень" onClick="askUser('Осень')">
+</form>
+</body>
+</html>

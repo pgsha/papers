@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Задание 8.9</title>
+<script language='JavaScript'>
+	function f_Open(path) {
+		open(path,"","toolbar=no, location=no, Directory=no, Status=no, Menubar=no, Scrollbar=no, resizable=no, width=200, height=200");
+	};
+</script>
+</head>
+<body>
+<center>
+<input type='button' value="Открыть новое окно!" onclick='f_Open("Закрыть.html");'>
+<br><br>
+Укажите фон документа:
+<select name='select_bgcolor' onchange='document.bgColor=this.options[selectedIndex].value';>
+	<option value='FFFFFF' selected>White
+	<option value='0000FF'>Blue
+	<option value='FF00FF'>Fuchsia
+	<option value='808080'>Gray
+	<option value='009000'>Green
+	<option value='00FF00'>Lime
+</select>
+<p onmouseover='this.style.color="red"' onmouseout='this.style.color="black"'>
+Это очень хитрый абзац, который изменяет свой цвет при наведении на него курсора мыши. </p>
+<p onmouseover='this.style.visibility="hidden"' onmouseout='this.style.visibility="visible"'>
+А это еще более хитрый абзац, который выключает свою видимость при наведении на него куорса мыши. 
+Он снова появится на экране только при нажатии любой клавиши на клавиатуре.</p>
+</center>
+</body>
+</html>

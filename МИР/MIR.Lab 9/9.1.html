@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Задание 9.1</title>
+<script language='JavaScript'>
+function askUser(){
+var answer=' ';
+var stat='Введите время суток с б. буквы';
+var answer=prompt('Какое сейчас время суток?',stat);
+
+switch (answer) {
+case 'Утро': document.bgColor="yellow"; break;
+case 'День': document.bgColor="green"; break;
+case 'Вечер': document.bgColor="red"; break;
+case 'Ночь': document.bgColor="black"; break;
+default: document.bgColor="white"; break;
+}
+
+}
+</script>
+</head>
+<body>
+
+<form>
+<input type="button" value="Кнопка" onClick="askUser()">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+SELECT Spisok.family, Spisok.name, Spisok.otch, Spisok.god,;
+  Lichn_data.adress;
+ FROM ;
+     SCHOOL!SPISOK ;
+    INNER JOIN SCHOOL!LICHN_DATA ;
+   ON  Spisok.code = Lichn_data.code;
+ WHERE  Spisok.god > 1983;
+ INTO TABLE query_a.dbf  

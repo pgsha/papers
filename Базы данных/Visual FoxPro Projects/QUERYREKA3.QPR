@@ -1,0 +1,7 @@
+
+SELECT Table1.id, Table1.reka, Table1.dlina, Table1.stok, Table1.s,;
+  Table1.istoki, Table1.vpadaet;
+ FROM ;
+     REKI_ROSSII!TABLE1;
+ WHERE  Table1.vpadaet = "Каспийское море";
+ INTO TABLE queryreka3.dbf  

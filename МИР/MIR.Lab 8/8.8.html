@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Задание 8.8</title>
+<script language='JavaScript'>
+function f_over(a) {
+	a.style.color='#FF8811';
+	a.style.filter='Shadow';
+	a.style.cursor='hand';
+	a.style.background='blue';
+	a.style.border='3px solid rgb(252,196,3)';
+	a.style.font='35 Tahoma';
+}
+function f_out(a) {
+	a.style.color='black';
+	a.style.filter='';
+	a.style.cursor='';
+	a.style.background='0';
+	a.style.font='25pt Arial';
+}
+</script>
+</head>
+<body>
+<table border="1" align="center">
+<tr>
+<tr><td onmouseover="f_over(this);" onmouseout="f_out(this);">Первый</td></tr>
+<tr><td onmouseover="f_over(this);" onmouseout="f_out(this);">Второй</td></tr>
+<tr><td onmouseover="f_over(this);" onmouseout="f_out(this);">Третий</td></tr>
+<tr><td onmouseover="f_over(this);" onmouseout="f_out(this);">Четвертый</td></tr>
+<tr><td onmouseover="f_over(this);" onmouseout="f_out(this);">Пятый</td></tr>
+</table>
+</body>
+</html>
